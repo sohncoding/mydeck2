@@ -1,29 +1,28 @@
+<!-- mydeck/index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <title>MyDeck - Main</title>
-  <link rel="stylesheet" href="./style.css" />
+  <meta charset="UTF-8">
+  <title>My Deck - 메인</title>
 </head>
 <body>
-  <h1>등록된 캐릭터 목록</h1>
+  <h1>메인 페이지 (캐릭터 조회)</h1>
 
-  <!-- 네비게이션 -->
+  <!-- 등록된 캐릭터 리스트를 표시할 영역 -->
+  <div id="character-list"></div>
+
+  <hr/>
+
   <nav>
-    <ul>
-      <li><a href="./">메인</a></li>
-      <li><a href="./register/">캐릭터 등록</a></li>
-      <li><a href="./deck/">덱 구성</a></li>
-    </ul>
+    <a href="./register/">캐릭터 등록하러 가기</a>
+    <a href="./deck/">덱 만들러 가기</a>
   </nav>
 
-  <hr />
-
-  <section>
-    <h2>내가 등록한 캐릭터</h2>
-    <div id="my-characters" class="character-list"></div>
-  </section>
-
-  <script src="./index.js"></script>
+  <!-- 공통 스크립트 -->
+  <script src="./js/common.js"></script>
+  <!-- 전체 캐릭터 정보 -->
+  <script src="./js/characters.js"></script>
+  <!-- 메인 페이지 스크립트 -->
+  <script src="./js/main.js"></script>
 </body>
 </html>

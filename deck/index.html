@@ -1,36 +1,30 @@
+<!-- mydeck/deck/index.html -->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>덱 구성</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>덱 만들기</title>
 </head>
 <body>
-  <h1>덱 구성</h1>
+  <h1>덱 페이지</h1>
+  <p>아래에서 당신이 가지고 있는 캐릭터 중 5명을 선택해 덱을 구성하세요.</p>
 
+  <!-- 사용자가 등록한 캐릭터를 보여주고, 5명을 선택할 수 있게 함 -->
+  <div id="my-characters"></div>
+
+  <button id="save-deck-btn">덱 저장하기</button>
+
+  <hr/>
   <nav>
-    <ul>
-      <li><a href="../">메인</a></li>
-      <li><a href="../register/">캐릭터 등록</a></li>
-      <li><a href="./">덱 구성</a></li>
-    </ul>
+    <a href="../">메인으로</a>
+    <a href="../register/">캐릭터 등록</a>
   </nav>
 
-  <hr />
-
-  <section>
-    <h2>등록된 캐릭터 목록</h2>
-    <p>클릭하면 덱에 추가됩니다. (최대 5개)</p>
-    <div id="my-characters" class="character-list"></div>
-  </section>
-
-  <hr />
-
-  <section>
-    <h2>내 덱</h2>
-    <div id="my-deck" class="character-list"></div>
-  </section>
-
-  <script src="./deck.js"></script>
+  <!-- 공통 스크립트 -->
+  <script src="../js/common.js"></script>
+  <!-- 전체 캐릭터 정보 -->
+  <script src="../js/characters.js"></script>
+  <!-- 덱 페이지 스크립트 -->
+  <script src="../js/deck.js"></script>
 </body>
 </html>
