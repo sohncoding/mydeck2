@@ -1,0 +1,50 @@
+/* 간단한 스타일 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 10px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.character-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.character-card {
+  width: 120px;
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.character-card img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: cover;
+}
+
+.character-card .char-name {
+  margin-top: 4px;
+  font-weight: bold;
+}
