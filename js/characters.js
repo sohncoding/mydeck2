@@ -1,4 +1,4 @@
-const allCharacters = [
+const ALL_CHARACTERS = [
     { id: "101", name: "스노우 화이트", img: "../images/101.png" },
     { id: "102", name: "이사벨", img: "../images/102.png" },
     { id: "103", name: "라푼젤", img: "../images/103.png" },
